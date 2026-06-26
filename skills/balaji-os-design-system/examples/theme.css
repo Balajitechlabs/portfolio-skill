@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  /* Midnight Slate theme using OKLCH */
+  --background: oklch(18% 0.03 260); 
+  --foreground: oklch(98% 0.01 260);
+  
+  /* Elevated cards */
+  --card: oklch(21% 0.03 260);
+  --card-foreground: oklch(98% 0.01 260);
+  
+  /* Borders & Accents */
+  --border: oklch(25% 0.04 260);
+  --primary: oklch(65% 0.15 250); /* Signature Electric Blue */
+  --primary-foreground: oklch(98% 0 0);
+  
+  /* Muted elements */
+  --muted: oklch(28% 0.04 260);
+  --muted-foreground: oklch(75% 0.02 260);
+
+  /* Fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography styles based on the Balaji OS design mandate */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.05em; /* tracking-tighter */
+  font-weight: 700;
+}
+
+.technical-accent {
+  font-family: var(--font-mono);
+  font-size: 10px; /* text-[10px] */
+  text-transform: uppercase;
+  letter-spacing: 0.2em; /* tracking-[0.2em] */
+  color: var(--muted-foreground);
+}
+
+/* Glassmorphism utility card */
+.glass-card {
+  background: rgba(21, 25, 38, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
