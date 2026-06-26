@@ -1,0 +1,13 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Balaji OS Portfolio",
+      "description": "Complete technical skill and design system reference for the Balaji OS portfolio.",
+      "skills": [
+        "balajitechlabs-portfolio-complete"
+      ]
+    }
+  ]
+}
