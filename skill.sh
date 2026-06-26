@@ -12,7 +12,7 @@ CYAN='\033[0;36m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-SKILL_NAME="balaji-os-design-system"
+SKILL_NAME="balajitechlabs-portfolio-complete"
 SKILL_DIR="skills/$SKILL_NAME"
 GLOBAL_ROOT="$HOME/.gemini/config/skills"
 LOCAL_ROOT=".agents/skills"

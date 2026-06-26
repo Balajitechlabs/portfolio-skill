@@ -1,6 +1,6 @@
-# 🌌 Balaji OS — Design System Skill Repository
+# 🌌 BalajiTechLabs Portfolio — Complete Skill & Design Reference
 
-This repository packages the custom **Balaji OS Design System** skill for Antigravity AI coding agents. It bridges the gap between Apple-tier consumer UI and raw hacker/developer terminal power, utilizing midnight themes, heavy glassmorphism, fluid animations, and strict typography.
+This repository packages the custom **BalajiTechLabs Portfolio Complete** skill for Antigravity AI coding agents. It serves as the single canonical source of truth for the Balaji OS portfolio (portfolio.balajitechlab.com), wrapping both the technical structure and design tokens.
 
 ## 📁 Repository Structure
 
@@ -8,16 +8,16 @@ This repository packages the custom **Balaji OS Design System** skill for Antigr
 ├── .gitignore
 ├── README.md
 ├── skills.json
-├── skill.sh                    # Installation & registration script
+├── skill.sh                             # Installation & registration script
 └── skills/
-    └── balaji-os-design-system/
-        ├── SKILL.md            # Core design system rules and configuration
-        └── examples/           # Ready-to-use implementation files
-            ├── theme.css       # Midnight Slate OKLCH colors & typography variables
-            ├── Navbar.tsx      # Resend.com-style glass navigation bar
-            ├── MagneticButton.tsx # Framer Motion physical magnetic spring button
-            ├── AudioFeedback.tsx  # Sound trigger binds for user interactions (use-sound)
-            └── CyberWave.tsx   # React Three Fiber WebGL undulating wave canvas
+    └── balajitechlabs-portfolio-complete/
+        ├── SKILL.md                     # Core technical skill and design system reference
+        └── examples/                    # Ready-to-use implementation files
+            ├── theme.css                # Midnight Slate OKLCH colors & typography variables
+            ├── Navbar.tsx               # Resend.com-style glass navigation bar
+            ├── MagneticButton.tsx          # Framer Motion physical magnetic spring button
+            ├── AudioFeedback.tsx           # Sound trigger binds for user interactions (use-sound)
+            └── CyberWave.tsx            # React Three Fiber WebGL undulating wave canvas
 ```
 
 ---
@@ -27,13 +27,13 @@ This repository packages the custom **Balaji OS Design System** skill for Antigr
 You can install this skill either **globally** (for all your coding workspaces) or **locally** (only in your current project workspace).
 
 ### Option 1: Local Installation (Recommended for Projects)
-To install the skill to your current workspace root (creates `.agents/skills/balaji-os-design-system/`):
+To install the skill to your current workspace root (creates `.agents/skills/balajitechlabs-portfolio-complete/`):
 ```bash
 bash skill.sh --local
 ```
 
 ### Option 2: Global Installation (Available Across All Workspaces)
-To install the skill globally to your user config root (creates `~/.gemini/config/skills/balaji-os-design-system/`):
+To install the skill globally to your user config root (creates `~/.gemini/config/skills/balajitechlabs-portfolio-complete/`):
 ```bash
 bash skill.sh --global
 ```
@@ -48,37 +48,18 @@ bash skill.sh --dry-run
 
 ## 🚀 How to Publish to GitHub
 
-1. **Initialize the local Git repository** (done automatically if using the repository initialization script):
+1. **Initialize the local Git repository**:
    ```bash
    git init
    git add .
-   git commit -m "feat: init Balaji OS design system skill repository"
+   git commit -m "feat: init Balaji OS portfolio complete skill repository"
    ```
 
-2. **Create a new repository on GitHub** (e.g., named `balaji-os-design-system`).
-
-3. **Link your local repository to GitHub and push**:
+2. **Link your local repository to GitHub and push**:
    ```bash
-   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/balaji-os-design-system.git
+   git remote add origin https://github.com/Balajitechlabs/portfolio-skill.git
    git branch -M main
    git push -u origin main
    ```
 
 Once pushed, other projects can consume this repository by cloning it and linking it via `skills.json` or running the `./skill.sh` script.
-
----
-
-## 🎨 Balaji OS Design Mandates
-
-### 1. Philosophy
-- 10/10 visual experience, maximum luxury meets technical depth.
-- No flat elements, no standard hover transitions, no solid pure blacks (`#000000`).
-
-### 2. OKLCH Themes
-- **Background**: Deep indigo/slate `oklch(18% 0.03 260)`
-- **Accent**: Electric blue `oklch(65% 0.15 250)`
-
-### 3. Fonts
-- Headings: `Space Grotesk`
-- Body: `Inter`
-- Labels / Stats: Uppercase `JetBrains Mono` with extra letter-spacing (`tracking-[0.2em]`).
